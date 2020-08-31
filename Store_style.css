@@ -14,20 +14,31 @@
 }
 
 .menu {
-    padding:40px;
-    width: 33%;
-    height: 100%;
+    overflow:hidden;   
+}
+
+.menu a {
+    Display:block;
+    text-align:center;
+    padding:16px;
+    text-decoration:none;
+    color: black;
     font-family: Verdana, sans-serif;
     font-weight: bold;
     font-size: 14px ;
+
 }
 
-.espace {
-    text-decoration: none;
-    color:black;
-    margin-left:16px;
-    float:center;
+menu.icon {
+    display:none;
+
 }
+
+li {
+    list-style-type: none;
+    float:left;
+}
+
 
 .espace_cart {
     text-decoration: none;
@@ -37,7 +48,7 @@
 }
 
 .mycart {
-    width: 33%;
+    width: 20%;
     
     height: 100%;
     font-family: Verdana, sans-serif;
@@ -117,7 +128,36 @@ line-height: 1.8;
 .block_img {
     width:500px;
     height:350px;
-    
+
     display:flex;
 }
 
+@media screen and (max-width: 600px){
+    .menu li:not(:first-child){display:none;}
+    .menu li.icon {
+        float: left;
+        display:block;
+    }
+
+@media screen and (max-width: 600px){
+    .menu.responsive {position:relative;}
+    .menu.responsive .icon {
+        position:absolute;
+        right:0;
+        top:0;    
+    }
+
+}
+
+    
+
+
+    
+
+
+
+
+
+
+
+}
