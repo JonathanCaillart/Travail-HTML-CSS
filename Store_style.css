@@ -156,11 +156,30 @@ padding-left:80px;
 visibility: hidden;       
 }
     
+.main_texte {
+  
+    width:170%;
+    
+}   
+
 .icon {
 position: absolute;
 visibility:visible;
 float:right;
     
+}
+
+.content  {
+    
+width:75%;
+font-size: 75%;
+    
+}
+
+.block_img {
+    width: 100px;
+    height: 100px;
+    display: flex;
 }
 
 }
